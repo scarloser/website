@@ -1,0 +1,164 @@
+.path-link {
+  font-family: ui-monospace, "JetBrains Mono", "Fira Code", Consolas, monospace;
+  font-size: 0.95em;
+}
+.terminal {
+  max-width: 42em;
+  margin: 1.2em 0 2em;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--surface2);
+  border: 1px solid var(--color-semi-trans);
+  box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.35);
+}
+.terminal-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.6em 0.8em;
+  background: var(--surface);
+  border-bottom: 1px solid var(--color-semi-trans);
+}
+.terminal-dot {
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  display: inline-block;
+}
+.terminal-dot.red {
+  background: #ff5f56;
+}
+.terminal-dot.yellow {
+  background: #ffbd2e;
+}
+.terminal-dot.green {
+  background: #27c93f;
+}
+.terminal-title {
+  margin-left: 0.6em;
+  font-size: 0.85em;
+  color: var(--color-semi-trans);
+  font-family: ui-monospace, "JetBrains Mono", Consolas, monospace;
+}
+.terminal-body {
+  margin: 0;
+  padding: 1em 1.1em 1.2em;
+  font-family: ui-monospace, "JetBrains Mono", Consolas, monospace;
+  font-size: 0.88em;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: var(--color);
+  min-height: 9em;
+}
+.terminal-body .prompt {
+  color: var(--accent);
+}
+.terminal-caret {
+  display: inline-block;
+  width: 0.55em;
+  height: 1em;
+  margin-left: 1px;
+  transform: translateY(0.18em);
+  background: var(--accent);
+  animation: terminal-blink 1s steps(1) infinite;
+}
+@keyframes terminal-blink {
+  50% {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .terminal-caret {
+    animation: none;
+  }
+}
+.code-window {
+  max-width: 32em;
+  margin: 1em 0 1.6em;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--color-semi-trans);
+  box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.35);
+}
+.code-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.6em 0.8em;
+  background: var(--prism-toolbar-bg, var(--surface));
+  border-bottom: 1px solid var(--color-semi-trans);
+}
+.code-title {
+  margin-left: 0.6em;
+  font-size: 0.85em;
+  color: var(--prism-toolbar-fg, var(--color-semi-trans));
+  font-family: ui-monospace, "JetBrains Mono", Consolas, monospace;
+}
+.code-window pre {
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+.project-card {
+  background: var(--surface2);
+  border: 1px solid var(--color-semi-trans);
+  padding: 1em;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+.project-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6em;
+}
+.project-head h3 {
+  margin: 0;
+  font-family: ui-monospace, "JetBrains Mono", Consolas, monospace;
+  font-size: 1em;
+}
+.project-card p {
+  margin: 0;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  color: var(--color-semi-trans);
+}
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+.tag {
+  font-size: 0.78em;
+  padding: 0.2em 0.6em;
+  border-radius: 9999px;
+  background: var(--surface);
+  border: 1px solid var(--color-semi-trans);
+  font-family: ui-monospace, "JetBrains Mono", Consolas, monospace;
+}
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-size: 0.78em;
+  white-space: nowrap;
+}
+.status-dot {
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+}
+.status.active .status-dot {
+  background: #23a55a;
+}
+.status.planned .status-dot {
+  background: var(--warning);
+}

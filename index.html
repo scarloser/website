@@ -1,0 +1,954 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://cdn.discordapp.com/embed/avatars/0.png" />
+    <title>scarloser</title>
+    <meta name="description" content="scarloser's site" />
+    <meta name="author" content="scarloser" />
+    <meta name="theme-color" content="#dd7878" />
+    <meta name="og:type" content="website" />
+    <meta name="og:title" content="scarloser" />
+    <meta name="og:description" content="scarloser's site" />
+    <meta name="og:url" content="https://scarloser.org/" />
+    <meta name="og:image" content="https://cdn.discordapp.com/embed/avatars/0.png" />
+    <meta name="darkreader-lock" />
+    <link
+      rel="preload"
+      href="/fonts/Inter.var-subset.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/_astro/about.BMKeMebU.css" />
+    <style>
+      li[data-astro-cid-yxtifmrq] {
+        display: inline-flex;
+        align-items: center;
+      }
+      h3[data-astro-cid-yxtifmrq] {
+        all: unset;
+        text-decoration: none;
+        margin-right: 0.5em;
+        min-width: 5rem;
+      }
+      li[data-astro-cid-yxtifmrq] .content[data-astro-cid-yxtifmrq] {
+        border-radius: 99999px;
+        padding: 0.2em 0.5em;
+        background-color: var(--surface2);
+        text-decoration: none;
+      }
+      .content[data-astro-cid-yxtifmrq] {
+        transition:
+          0.2s box-shadow,
+          0.2s color,
+          0.2s transform;
+      }
+      .content[data-astro-cid-yxtifmrq]:hover {
+        text-decoration: none;
+        color: var(--hover, var(--accent));
+        box-shadow: 0 0 14px -2px var(--hover, var(--accent));
+        transform: translateY(-1px);
+      }
+      li[data-astro-cid-yxtifmrq] svg {
+        transition: 0.2s color;
+      }
+      li[data-astro-cid-yxtifmrq]:hover svg {
+        color: var(--hover, var(--accent));
+      }
+      ul[data-astro-cid-upu6fzxr] {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      iframe[data-astro-cid-upu6fzxr] {
+        box-shadow: 0 0 0 1px var(--color);
+        border-radius: 12px;
+      }
+      .dark iframe[data-astro-cid-upu6fzxr] {
+        box-shadow: none;
+      }
+      img[data-astro-cid-d6lugpgq] {
+        height: 31px;
+        width: 88px;
+        image-rendering: pixelated;
+        transition: 0.2s scale;
+      }
+      a[data-astro-cid-d6lugpgq] {
+        height: 31px;
+        width: 88px;
+        text-decoration: none;
+        &[data-astro-cid-d6lugpgq]:is(:hover) img[data-astro-cid-d6lugpgq] {
+          scale: 1.05;
+        }
+      }
+      .hero[data-astro-cid-j7pv25f6] {
+        display: flex;
+        align-items: center;
+        gap: 1.2em;
+        flex-wrap: wrap;
+      }
+      .hero[data-astro-cid-j7pv25f6] h1[data-astro-cid-j7pv25f6] {
+        margin: 0;
+      }
+      .avatar[data-astro-cid-j7pv25f6] {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        border: 2px solid var(--accent);
+        box-shadow: 0 0 24px -4px var(--accent);
+        object-fit: cover;
+      }
+      .typed-line[data-astro-cid-j7pv25f6] {
+        margin-top: 0.4em;
+        font-family:
+          ui-monospace,
+          JetBrains Mono,
+          Consolas,
+          monospace;
+        color: var(--accent);
+        min-height: 1.5em;
+      }
+      .caret[data-astro-cid-j7pv25f6] {
+        animation: blink 1s steps(1) infinite;
+      }
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .caret[data-astro-cid-j7pv25f6] {
+          animation: none;
+        }
+      }
+      #now-playing[data-astro-cid-j7pv25f6] {
+        display: inline-flex;
+        gap: 0.6em;
+        align-items: center;
+        margin-top: 0.5rem;
+        padding: 0.3em 0.9em;
+        border-radius: 99999px;
+        background: var(--surface2);
+        font-size: 0.9em;
+      }
+      #now-playing[data-astro-cid-j7pv25f6][hidden] {
+        display: none;
+      }
+      .np-label[data-astro-cid-j7pv25f6]:before {
+        content: "";
+        display: inline-block;
+        width: 0.6em;
+        height: 0.6em;
+        margin-right: 0.4em;
+        border-radius: 50%;
+        background: #1db954;
+      }
+      .wrapper[data-astro-cid-j7pv25f6] {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .terry[data-astro-cid-j7pv25f6] {
+        margin-inline: auto 2em;
+        margin-bottom: 1em;
+        @media (prefers-reduced-motion: reduce) {
+          display: none;
+        }
+      }
+      section[data-astro-cid-j7pv25f6] {
+        margin-bottom: 2.5em;
+      }
+      span[data-astro-cid-j7pv25f6] {
+        color: var(--accent);
+      }
+      h2[data-astro-cid-j7pv25f6] {
+        font-size: unset;
+      }
+      a[data-astro-cid-j7pv25f6]:not(:hover) {
+        text-decoration: none;
+      }
+      #frens[data-astro-cid-j7pv25f6] {
+        --per-row: 10;
+        display: inline-grid;
+        grid-template-columns: repeat(auto-fit, 88px);
+        gap: 4px;
+        max-width: calc(var(--per-row) * (88px + 4px));
+        width: 100%;
+        @media (max-width: 405px) {
+          justify-content: center;
+        }
+      }
+      svg[data-astro-cid-uwsf2fbm] {
+        width: 24px;
+        height: 24px;
+        margin-right: 0.5em;
+        shape-rendering: auto;
+      }
+    </style>
+    <link rel="stylesheet" href="/css/site.css" />
+  </head>
+  <body>
+    <header>
+      <nav data-astro-cid-ymhdp2rl>
+        <div id="btns" data-astro-cid-ymhdp2rl>
+          <ul data-astro-cid-ymhdp2rl>
+            <li class="focus-ring-parent" data-astro-cid-ymhdp2rl>
+              <a
+                class="svelte-96nnl8 path-link"
+                href="/"
+                data-astro-cid-ymhdp2rl="true"
+                title="Home"
+                >~/home</a
+              >
+            </li>
+            <li class="focus-ring-parent" data-astro-cid-ymhdp2rl>
+              <a
+                class="svelte-96nnl8 path-link"
+                href="/about"
+                data-astro-cid-ymhdp2rl="true"
+                title="About"
+                >~/about</a
+              >
+            </li>
+            <li class="focus-ring-parent" data-astro-cid-ymhdp2rl>
+              <a
+                class="svelte-96nnl8 path-link"
+                href="/tech"
+                data-astro-cid-ymhdp2rl="true"
+                title="Tech"
+                >~/tech</a
+              >
+            </li>
+          </ul>
+          <div
+            aria-label="Change Theme"
+            id="theme-toggle"
+            class="focus-ring-parent"
+            data-astro-cid-d7s4mkqw
+          >
+            <label title="Light theme" data-astro-cid-d7s4mkqw>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 -960 960 960"
+                fill="currentColor"
+                class="theme-toggle-icon"
+                data-astro-cid-d7s4mkqw="true"
+              >
+                <path
+                  d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
+                ></path>
+              </svg>
+              <input
+                type="radio"
+                name="theme"
+                value="light"
+                id="theme-light"
+                aria-label="Light theme"
+                data-astro-cid-d7s4mkqw
+              /> </label
+            ><label title="Follow system theme" data-astro-cid-d7s4mkqw>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 -960 960 960"
+                fill="currentColor"
+                class="theme-toggle-icon"
+                data-astro-cid-d7s4mkqw="true"
+              >
+                <path
+                  d="M320-120v-80h80v-80H160q-33 0-56.5-23.5T80-360v-400q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v400q0 33-23.5 56.5T800-280H560v80h80v80H320ZM160-360h640v-400H160v400Zm0 0v-400 400Z"
+                ></path>
+              </svg>
+              <input
+                type="radio"
+                name="theme"
+                value="system"
+                id="theme-system"
+                checked
+                aria-label="Follow system theme"
+                data-astro-cid-d7s4mkqw
+              /> </label
+            ><label title="Dark theme" data-astro-cid-d7s4mkqw>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 -960 960 960"
+                fill="currentColor"
+                class="theme-toggle-icon"
+                data-astro-cid-d7s4mkqw="true"
+              >
+                <path
+                  d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
+                ></path>
+              </svg>
+              <input
+                type="radio"
+                name="theme"
+                value="dark"
+                id="theme-dark"
+                aria-label="Dark theme"
+                data-astro-cid-d7s4mkqw
+              />
+            </label>
+            <script src="/js/theme-toggle.js" defer></script>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="wrapper" data-astro-cid-j7pv25f6>
+        <div class="centered-body" data-astro-cid-nuwbo64z style="--maxWidth: 800px">
+          <div class="content" data-astro-cid-nuwbo64z style="--maxWidth: 800px">
+            <section data-astro-cid-j7pv25f6>
+              <div class="hero" data-astro-cid-j7pv25f6>
+                <img
+                  id="avatar"
+                  class="avatar"
+                  src="https://cdn.discordapp.com/embed/avatars/0.png"
+                  alt=""
+                  width="96"
+                  height="96"
+                  data-astro-cid-j7pv25f6
+                />
+                <div data-astro-cid-j7pv25f6>
+                  <h1 data-astro-cid-j7pv25f6>
+                    Hi, I'm <span data-astro-cid-j7pv25f6>scarloser!</span>
+                  </h1>
+                </div>
+              </div>
+              <div class="terminal" id="terminal">
+                <div class="terminal-bar">
+                  <span class="terminal-dot red"></span><span class="terminal-dot yellow"></span
+                  ><span class="terminal-dot green"></span>
+                  <span class="terminal-title">visitor@scarloser: ~</span>
+                </div>
+                <pre class="terminal-body" id="terminal-body"></pre>
+              </div>
+              <p data-astro-cid-j7pv25f6 hidden>
+                I&#39;m a self-taught software developer who&#39;s very passionate about technology,
+                freedom, and privacy. <br data-astro-cid-j7pv25f6 />
+                I also really love Music!
+              </p>
+            </section>
+            <section id="socials" data-astro-cid-j7pv25f6>
+              <h2 data-astro-cid-j7pv25f6>Find me online:</h2>
+              <ul data-astro-cid-upu6fzxr>
+                <li data-astro-cid-yxtifmrq>
+                  <iframe
+                    id="discord-widget"
+                    title="User Embed"
+                    width="340"
+                    height="120"
+                    frameborder="0"
+                    scrolling="no"
+                    sandbox="allow-scripts"
+                    src="https://widgets.vendicated.dev/user?id=259449904047456256&theme=light&banner=true&full-banner=false&rounded-corners=false&discord-icon=true"
+                    data-astro-cid-upu6fzxr
+                  ></iframe>
+                </li>
+                <li style="--hover: #888" data-astro-cid-yxtifmrq>
+                  <svg
+                    role="img"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="astro-uwsf2fbm"
+                    data-astro-cid-uwsf2fbm
+                  >
+                    <title>GitHub</title>
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                    ></path>
+                  </svg>
+                  <h3 data-astro-cid-yxtifmrq>GitHub</h3>
+                  <a
+                    class="content focus-ring focus-ring svelte-96nnl8"
+                    href="https://github.com/scarloser"
+                    rel="me"
+                    data-astro-cid-yxtifmrq="true"
+                    >scarloser</a
+                  >
+                </li>
+                <li style="--hover: #ff3b3b" data-astro-cid-yxtifmrq>
+                  <svg
+                    role="img"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="astro-uwsf2fbm"
+                    data-astro-cid-uwsf2fbm
+                  >
+                    <title>YouTube</title>
+                    <path
+                      d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                    ></path>
+                  </svg>
+                  <h3 data-astro-cid-yxtifmrq>YouTube</h3>
+                  <a
+                    class="content focus-ring focus-ring svelte-96nnl8"
+                    href="https://www.youtube.com/@scarloser"
+                    rel="me"
+                    data-astro-cid-yxtifmrq="true"
+                    >scarloser</a
+                  >
+                </li>
+                <li style="--hover: #9146ff" data-astro-cid-yxtifmrq>
+                  <svg
+                    role="img"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="astro-uwsf2fbm"
+                    data-astro-cid-uwsf2fbm
+                  >
+                    <title>Twitch</title>
+                    <path
+                      d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"
+                    ></path>
+                  </svg>
+                  <h3 data-astro-cid-yxtifmrq>Twitch</h3>
+                  <a
+                    class="content focus-ring focus-ring svelte-96nnl8"
+                    href="https://www.twitch.tv/scarloser"
+                    rel="me"
+                    data-astro-cid-yxtifmrq="true"
+                    >scarloser</a
+                  >
+                </li>
+                <li style="--hover: #25f4ee" data-astro-cid-yxtifmrq>
+                  <svg
+                    role="img"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="astro-uwsf2fbm"
+                    data-astro-cid-uwsf2fbm
+                  >
+                    <title>TikTok</title>
+                    <path
+                      d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                    ></path>
+                  </svg>
+                  <h3 data-astro-cid-yxtifmrq>TikTok</h3>
+                  <a
+                    class="content focus-ring focus-ring svelte-96nnl8"
+                    href="https://www.tiktok.com/@scarloserr"
+                    rel="me"
+                    data-astro-cid-yxtifmrq="true"
+                    >scarloserr</a
+                  >
+                </li>
+              </ul>
+              <script
+                type="module"
+                src="/_astro/Socials.astro_astro_type_script_index_0_lang.DIml-jW3.js"
+              ></script>
+              <div id="now-playing" hidden data-astro-cid-j7pv25f6>
+                <span class="np-label" data-astro-cid-j7pv25f6>Listening to</span>
+                <a id="np-link" target="_blank" rel="noopener" data-astro-cid-j7pv25f6></a>
+              </div>
+            </section>
+            <section id="friends" data-astro-cid-j7pv25f6>
+              <div id="frens" data-astro-cid-j7pv25f6>
+                <a
+                  href="https://outlow.eu/engkro"
+                  title="engkro"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="https://cyber.dabamos.de/88x31/dball2k.gif"
+                    alt="engkro"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://fakecrime.bio/scarloser"
+                  title="scarloser"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="https://cyber.dabamos.de/88x31/dk.gif"
+                    alt="scarloser"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://guns.lol/selutien"
+                  title="selutien"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="https://cyber.dabamos.de/88x31/discord-no-way.gif"
+                    alt="selutien"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a title="miku" rel="nofollow" class="focus-ring" data-astro-cid-d6lugpgq>
+                  <img
+                    src="/_astro/miku.DJ37-2FD.gif"
+                    alt="miku"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://fedoraproject.org"
+                  title="fedora"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/fedora.BkoUG6kR.png"
+                    alt="fedora"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://www.gnu.org/philosophy/free-sw.html"
+                  title="linuxnow"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/linuxnow.DLDwwcAS.gif"
+                    alt="linuxnow"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://nicotine-plus.org/"
+                  title="soulseek"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/soulseek.BcT1LWq7.gif"
+                    alt="soulseek"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://megu.dev"
+                  title="megu"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/megu.fR7Z6Y7v.png"
+                    alt="megu"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://caitlyn.moe"
+                  title="caitlyn"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/caitlyn.CZR-oqRh.png"
+                    alt="caitlyn"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://github.com/vap0r1ze"
+                  title="vap"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/vap.iIxw2l2h.png"
+                    alt="vap"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://lewisakura.moe"
+                  title="lewi"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/lewi.CNTJ-Qyl.png"
+                    alt="lewi"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://aagaming.me"
+                  title="aagamer"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/aagamer.7CNdQT8C.png"
+                    alt="aagamer"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://rushii.dev/"
+                  title="rushii"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/rushii.2_j9jIVB.webp"
+                    alt="rushii"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://github.com/rniii"
+                  title="rinicide"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/rinicide.DDaFO-Me.png"
+                    alt="rinicide"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://khcrysalis.dev"
+                  title="samara"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/samara.vK9YHCBM.png"
+                    alt="samara"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://codeberg.org/paige"
+                  title="paiger"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/paiger.BTjBYZ8P.gif"
+                    alt="paiger"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://xinto.dev"
+                  title="xinto"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/xinto.jIDVSdsF.png"
+                    alt="xinto"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://zt64.dev"
+                  title="zoot"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/zoot.CXf4UAUD.png"
+                    alt="zoot"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://mantikafasi.dev"
+                  title="mantikafasi"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/mantikafasi.CDb6RUL6.png"
+                    alt="mantikafasi"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://mugman.tech"
+                  title="mugman"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/mugman.CDRvaZpU.gif"
+                    alt="mugman"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://wingio.xyz"
+                  title="wing"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/wing.B6qyrNOf.gif"
+                    alt="wing"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://elissa.moe"
+                  title="elissa"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/elissa.CXG_6iqd.png"
+                    alt="elissa"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://c7.pm"
+                  title="c7"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/c7.BMjZMnXX.png"
+                    alt="c7"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://espi.me"
+                  title="epsi"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/epsi.RLHI7lWz.png"
+                    alt="epsi"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://alula.me"
+                  title="alula"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/alula.DndEYn9Q.png"
+                    alt="alula"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://sapphic.moe"
+                  title="chloe"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/chloe.BvIgcmid.png"
+                    alt="chloe"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://wearr.dev"
+                  title="wearr"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/wearr.E49wmf8S.gif"
+                    alt="wearr"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://uncutified.moe"
+                  title="recutified"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/recutified.CIKMr-Jj.png"
+                    alt="recutified"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://bignutty.gitlab.io"
+                  title="bignutty"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/bignutty.eGluRG9H.png"
+                    alt="bignutty"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://sadan.zip/"
+                  title="salad"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/salad.UFEcTx1i.png"
+                    alt="salad"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://nin0.dev/"
+                  title="nino"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/nino.CRs5luUJ.png"
+                    alt="nino"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+                <a
+                  href="https://boni.moe/"
+                  title="boni"
+                  rel="nofollow"
+                  class="focus-ring"
+                  data-astro-cid-d6lugpgq
+                >
+                  <img
+                    src="/_astro/boni.C1Mm2SPE.gif"
+                    alt="boni"
+                    width="88"
+                    height="31"
+                    data-astro-cid-d6lugpgq
+                  />
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+        <img
+          src="/_astro/terry.M00B5RiF_LYhar.webp"
+          alt
+          data-astro-cid-j7pv25f6="true"
+          loading="lazy"
+          decoding="async"
+          fetchpriority="auto"
+          width="300"
+          height="424"
+          class="terry"
+        />
+      </div>
+    </main>
+    <script
+      type="module"
+      src="/_astro/Layout.astro_astro_type_script_index_0_lang.CedYVabU.js"
+    ></script>
+    <script src="/js/terminal.js" type="module"></script>
+    <script src="/js/now-playing.js" type="module"></script>
+  </body>
+</html>

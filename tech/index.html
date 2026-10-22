@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://cdn.discordapp.com/embed/avatars/0.png" />
+    <title>Tech</title>
+    <meta name="description" content="Cool things I've made" />
+    <meta name="author" content="scarloser" />
+    <meta name="theme-color" content="#dd7878" />
+    <meta name="og:type" content="website" />
+    <meta name="og:title" content="Tech" />
+    <meta name="og:description" content="Cool things I've made" />
+    <meta name="og:url" content="https://scarloser.org/tech/" />
+    <meta name="og:image" content="https://cdn.discordapp.com/embed/avatars/0.png" />
+    <meta name="darkreader-lock" />
+    <link
+      rel="preload"
+      href="/fonts/Inter.var-subset.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/_astro/about.BMKeMebU.css" />
+    <style>
+      .grid[data-astro-cid-rid4aoci] {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1em;
+      }
+      a[data-astro-cid-rid4aoci] {
+        all: unset;
+        cursor: pointer;
+        position: relative;
+        background: var(--surface2);
+        border: 1px solid var(--color-semi-trans);
+        padding: 1em;
+        border-radius: 8px;
+        display: grid;
+        align-content: start;
+        transition:
+          0.2s box-shadow var(--box-shadow-transition),
+          0.2s background;
+      }
+      a[data-astro-cid-rid4aoci]:is(:hover, :active) {
+        box-shadow: 0 0 18px -4px var(--accent);
+        border-color: var(--accent);
+        background: var(--surface);
+      }
+      h3[data-astro-cid-rid4aoci] {
+        margin: 0;
+      }
+      span[data-astro-cid-rid4aoci] {
+        font-size: 0.9em;
+      }
+      .author[data-astro-cid-rid4aoci],
+      .info[data-astro-cid-rid4aoci] {
+        display: flex;
+        align-items: center;
+      }
+      .author[data-astro-cid-rid4aoci] {
+        margin-bottom: 1em;
+        min-height: 2.6em;
+      }
+      .author[data-astro-cid-rid4aoci] img[data-astro-cid-rid4aoci] {
+        width: 2.6em;
+        height: 2.6em;
+        border-radius: 50%;
+        margin-right: 0.7em;
+      }
+      .info[data-astro-cid-rid4aoci] {
+        margin-top: 0.8em;
+        gap: 0.9em;
+        line-height: 1.2em;
+      }
+      .online[data-astro-cid-rid4aoci]:before,
+      .members[data-astro-cid-rid4aoci]:before {
+        content: "";
+        display: inline-block;
+        width: 0.7em;
+        height: 0.7em;
+        margin-right: 0.35em;
+        border-radius: 50%;
+      }
+      .online[data-astro-cid-rid4aoci]:before {
+        background: #23a55a;
+      }
+      .members[data-astro-cid-rid4aoci]:before {
+        background: var(--color-semi-trans);
+      }
+      .open-external[data-astro-cid-rid4aoci] {
+        all: unset;
+        cursor: pointer;
+        color: var(--color-semi-trans);
+        position: absolute;
+        top: 1em;
+        right: 0.5em;
+      }
+      .open-external[data-astro-cid-rid4aoci] svg {
+        width: 1.2em;
+        height: 1.2em;
+      }
+      section[data-astro-cid-lfow52u2] {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      h3[data-astro-cid-lfow52u2] {
+        display: inline-block;
+        margin: 0 0 auto;
+        font-weight: 400;
+        min-width: 6em;
+        text-align: center;
+        background: var(--surface2);
+        padding: 0.5em;
+        border-radius: 9999px;
+      }
+      .items[data-astro-cid-lfow52u2] {
+        padding: 0.2em;
+        display: flex;
+        gap: 0.5em;
+        flex-wrap: wrap;
+      }
+      a[data-astro-cid-lfow52u2] {
+        display: inline-block;
+        text-decoration: none;
+        height: 2em;
+        width: 2em;
+        padding: 0.2em;
+      }
+      img[data-astro-cid-lfow52u2] {
+        height: 2em;
+        width: 2em;
+        object-fit: fill;
+      }
+      @media (max-width: 600px) {
+        a[data-astro-cid-lfow52u2] {
+          padding: 0.1em;
+        }
+      }
+      @media (max-width: 400px) {
+        section[data-astro-cid-lfow52u2] {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+      .pre[data-astro-cid-rkbztatm] {
+        white-space: pre-line;
+      }
+      svg[data-astro-cid-uwsf2fbm] {
+        width: 24px;
+        height: 24px;
+        margin-right: 0.5em;
+        shape-rendering: auto;
+      }
+    </style>
+    <link rel="stylesheet" href="/css/site.css" />
+  </head>
+  <body>
+    <header>
+      <nav data-astro-cid-ymhdp2rl>
+        <div id="btns" data-astro-cid-ymhdp2rl>
+          <ul data-astro-cid-ymhdp2rl>
+            <li class="focus-ring-parent" data-astro-cid-ymhdp2rl>
+              <a
+                class="svelte-96nnl8 path-link"
+                href="/"
+                data-astro-cid-ymhdp2rl="true"
+                title="Home"
+                >~/home</a
+              >
+            </li>
+            <li class="focus-ring-parent" data-astro-cid-ymhdp2rl>
+              <a
+                class="svelte-96nnl8 path-link"
+                href="/about"
+                data-astro-cid-ymhdp2rl="true"
+                title="About"
+                >~/about</a
+              >
+            </li>
+            <li class="focus-ring-parent" data-astro-cid-ymhdp2rl>
+              <a
+                class="svelte-96nnl8 path-link"
+                href="/tech"
+                data-astro-cid-ymhdp2rl="true"
+                title="Tech"
+                >~/tech</a
+              >
+            </li>
+          </ul>
+          <div
+            aria-label="Change Theme"
+            id="theme-toggle"
+            class="focus-ring-parent"
+            data-astro-cid-d7s4mkqw
+          >
+            <label title="Light theme" data-astro-cid-d7s4mkqw>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 -960 960 960"
+                fill="currentColor"
+                class="theme-toggle-icon"
+                data-astro-cid-d7s4mkqw="true"
+              >
+                <path
+                  d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
+                ></path>
+              </svg>
+              <input
+                type="radio"
+                name="theme"
+                value="light"
+                id="theme-light"
+                aria-label="Light theme"
+                data-astro-cid-d7s4mkqw
+              /> </label
+            ><label title="Follow system theme" data-astro-cid-d7s4mkqw>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 -960 960 960"
+                fill="currentColor"
+                class="theme-toggle-icon"
+                data-astro-cid-d7s4mkqw="true"
+              >
+                <path
+                  d="M320-120v-80h80v-80H160q-33 0-56.5-23.5T80-360v-400q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v400q0 33-23.5 56.5T800-280H560v80h80v80H320ZM160-360h640v-400H160v400Zm0 0v-400 400Z"
+                ></path>
+              </svg>
+              <input
+                type="radio"
+                name="theme"
+                value="system"
+                id="theme-system"
+                checked
+                aria-label="Follow system theme"
+                data-astro-cid-d7s4mkqw
+              /> </label
+            ><label title="Dark theme" data-astro-cid-d7s4mkqw>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 -960 960 960"
+                fill="currentColor"
+                class="theme-toggle-icon"
+                data-astro-cid-d7s4mkqw="true"
+              >
+                <path
+                  d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
+                ></path>
+              </svg>
+              <input
+                type="radio"
+                name="theme"
+                value="dark"
+                id="theme-dark"
+                aria-label="Dark theme"
+                data-astro-cid-d7s4mkqw
+              />
+            </label>
+            <script src="/js/theme-toggle.js" defer></script>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="centered-body" data-astro-cid-nuwbo64z style="--maxWidth: 80%">
+        <div class="content" data-astro-cid-nuwbo64z style="--maxWidth: 80%">
+          <h1 data-astro-cid-rkbztatm>Tech</h1>
+          <p class="pre" data-astro-cid-rkbztatm>
+            I'm a big fan of
+            <a
+              class="svelte-96nnl8"
+              href="https://www.gnu.org/philosophy/free-sw.html"
+              data-astro-cid-rkbztatm="true"
+              >free (as in freedom) software</a
+            >, and develop most things out in the open! I'm self-taught and mostly build Discord
+            bots with Python and discord.py, running everything on Linux.
+          </p>
+          <div class="code-window">
+            <div class="code-bar">
+              <span class="terminal-dot red"></span><span class="terminal-dot yellow"></span
+              ><span class="terminal-dot green"></span><span class="code-title">scarloser.ts</span>
+            </div>
+            <pre
+              class="language-js"
+            ><code class="language-js"><span class="token keyword">const</span> <span class="token variable">scarloser</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token property">langs</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"python"</span><span class="token punctuation">,</span> <span class="token string">"bash"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">stack</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"discord.py"</span><span class="token punctuation">,</span> <span class="token string">"astro"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">os</span><span class="token operator">:</span> <span class="token string">"linux"</span><span class="token punctuation">,</span>
+  <span class="token property">focus</span><span class="token operator">:</span> <span class="token string">"discord bots"</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+          </div>
+          <h2 id="tech-stack" data-astro-cid-rkbztatm>Tech Stack</h2>
+          <div data-astro-cid-lfow52u2>
+            <section data-astro-cid-lfow52u2>
+              <h3 data-astro-cid-lfow52u2>Backend</h3>
+              <div class="items" data-astro-cid-lfow52u2>
+                <a href="https://go.dev" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img src="/assets/stack/go.svg" title="Go" data-astro-cid-lfow52u2 /> </a
+                ><a href="https://crystal-lang.org/" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img
+                    src="/assets/stack/crystal.svg"
+                    title="Crystal"
+                    data-astro-cid-lfow52u2
+                  /> </a
+                ><a href="https://nodejs.dev" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img
+                    src="/assets/stack/node.js.svg"
+                    title="Node.js"
+                    data-astro-cid-lfow52u2
+                  /> </a
+                ><a href="https://www.java.com" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img src="/assets/stack/java.svg" title="Java" data-astro-cid-lfow52u2 /> </a
+                ><a href="https://www.python.org" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img src="/assets/stack/python.svg" title="Python" data-astro-cid-lfow52u2 />
+                </a>
+              </div>
+            </section>
+            <section data-astro-cid-lfow52u2>
+              <h3 data-astro-cid-lfow52u2>Frontend</h3>
+              <div class="items" data-astro-cid-lfow52u2>
+                <a href="https://www.typescriptlang.org" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img
+                    src="/assets/stack/typescript.svg"
+                    title="TypeScript"
+                    data-astro-cid-lfow52u2
+                  /> </a
+                ><a href="https://astro.build" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img src="/assets/stack/astro.svg" title="Astro" data-astro-cid-lfow52u2 /> </a
+                ><a href="https://react.dev" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img src="/assets/stack/react.svg" title="React" data-astro-cid-lfow52u2 /> </a
+                ><a href="https://svelte.dev" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img src="/assets/stack/svelte.svg" title="Svelte" data-astro-cid-lfow52u2 />
+                </a>
+              </div>
+            </section>
+            <section data-astro-cid-lfow52u2>
+              <h3 data-astro-cid-lfow52u2>Native</h3>
+              <div class="items" data-astro-cid-lfow52u2>
+                <a href="https://www.electronjs.org" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img
+                    src="/assets/stack/electron.svg"
+                    title="Electron"
+                    data-astro-cid-lfow52u2
+                  /> </a
+                ><a href="https://www.android.com" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img
+                    src="/assets/stack/android.svg"
+                    title="Android"
+                    data-astro-cid-lfow52u2
+                  /> </a
+                ><a href="https://kotlinlang.org" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img src="/assets/stack/kotlin.svg" title="Kotlin" data-astro-cid-lfow52u2 /> </a
+                ><a href="https://flutter.dev" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img src="/assets/stack/flutter.svg" title="Flutter" data-astro-cid-lfow52u2 />
+                </a>
+              </div>
+            </section>
+            <section data-astro-cid-lfow52u2>
+              <h3 data-astro-cid-lfow52u2>Databases</h3>
+              <div class="items" data-astro-cid-lfow52u2>
+                <a href="https://www.postgresql.org" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img
+                    src="/assets/stack/postgresql.svg"
+                    title="PostgreSQL"
+                    data-astro-cid-lfow52u2
+                  /> </a
+                ><a href="https://www.sqlite.org" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img src="/assets/stack/sqlite.svg" title="SQLite" data-astro-cid-lfow52u2 />
+                </a>
+              </div>
+            </section>
+            <section data-astro-cid-lfow52u2>
+              <h3 data-astro-cid-lfow52u2>Linux</h3>
+              <div class="items" data-astro-cid-lfow52u2>
+                <a href="https://www.docker.com" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img src="/assets/stack/docker.svg" title="Docker" data-astro-cid-lfow52u2 /> </a
+                ><a
+                  href="https://www.gnu.org/software/bash"
+                  class="focus-ring"
+                  data-astro-cid-lfow52u2
+                >
+                  <img src="/assets/stack/bash.svg" title="Bash" data-astro-cid-lfow52u2 /> </a
+                ><a href="https://www.debian.org" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img src="/assets/stack/debian.svg" title="Debian" data-astro-cid-lfow52u2 /> </a
+                ><a href="https://fedoraproject.org" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img src="/assets/stack/fedora.svg" title="Fedora" data-astro-cid-lfow52u2 /> </a
+                ><a href="https://caddyserver.com" class="focus-ring" data-astro-cid-lfow52u2>
+                  <img src="/assets/stack/caddy.svg" title="Caddy" data-astro-cid-lfow52u2 />
+                </a>
+              </div>
+            </section>
+          </div>
+          <h2 id="communities" data-astro-cid-rkbztatm>Communities</h2>
+          <div class="grid" data-astro-cid-rid4aoci>
+            <a
+              href="https://discord.gg/asker8"
+              class="focus-ring"
+              rel="noopener"
+              data-invite="asker8"
+              data-id="1361264802193739930"
+              data-astro-cid-rid4aoci
+            >
+              <span class="open-external" data-astro-cid-rid4aoci>
+                <svg
+                  role="img"
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  fill="none"
+                  class="astro-uwsf2fbm"
+                  data-astro-cid-uwsf2fbm
+                >
+                  <title>Open Externally</title>
+                  <path
+                    d="M21 3h-6m6 0l-9 9m9-9v6"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M21 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </span>
+              <div class="author" data-astro-cid-rid4aoci>
+                <img alt="" hidden data-astro-cid-rid4aoci />
+                <span data-astro-cid-rid4aoci>Discord Server</span>
+              </div>
+              <h3 data-astro-cid-rid4aoci>ASKER</h3>
+              <div class="info" data-astro-cid-rid4aoci>
+                <span class="online" hidden data-astro-cid-rid4aoci></span>
+                <span class="members" hidden data-astro-cid-rid4aoci></span>
+              </div> </a
+            ><a
+              href="https://discord.gg/GTnZnEHZ2A"
+              class="focus-ring"
+              rel="noopener"
+              data-invite="GTnZnEHZ2A"
+              data-id="1545883484235497584"
+              data-astro-cid-rid4aoci
+            >
+              <span class="open-external" data-astro-cid-rid4aoci>
+                <svg
+                  role="img"
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  fill="none"
+                  class="astro-uwsf2fbm"
+                  data-astro-cid-uwsf2fbm
+                >
+                  <title>Open Externally</title>
+                  <path
+                    d="M21 3h-6m6 0l-9 9m9-9v6"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M21 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </span>
+              <div class="author" data-astro-cid-rid4aoci>
+                <img alt="" hidden data-astro-cid-rid4aoci />
+                <span data-astro-cid-rid4aoci>Discord Server</span>
+              </div>
+              <h3 data-astro-cid-rid4aoci>ANONYMOUS SETTINGS</h3>
+              <div class="info" data-astro-cid-rid4aoci>
+                <span class="online" hidden data-astro-cid-rid4aoci></span>
+                <span class="members" hidden data-astro-cid-rid4aoci></span>
+              </div> </a
+            ><a
+              href="https://discord.gg/dKgfujjXkx"
+              class="focus-ring"
+              rel="noopener"
+              data-invite="dKgfujjXkx"
+              data-id="1551372258671591494"
+              data-astro-cid-rid4aoci
+            >
+              <span class="open-external" data-astro-cid-rid4aoci>
+                <svg
+                  role="img"
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  fill="none"
+                  class="astro-uwsf2fbm"
+                  data-astro-cid-uwsf2fbm
+                >
+                  <title>Open Externally</title>
+                  <path
+                    d="M21 3h-6m6 0l-9 9m9-9v6"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M21 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </span>
+              <div class="author" data-astro-cid-rid4aoci>
+                <img alt="" hidden data-astro-cid-rid4aoci />
+                <span data-astro-cid-rid4aoci>Discord Server</span>
+              </div>
+              <h3 data-astro-cid-rid4aoci>SCARLOSER´S KINGDOM</h3>
+              <div class="info" data-astro-cid-rid4aoci>
+                <span class="online" hidden data-astro-cid-rid4aoci></span>
+                <span class="members" hidden data-astro-cid-rid4aoci></span>
+              </div>
+            </a>
+          </div>
+          <script src="/js/discord-invites.js" type="module"></script>
+        </div>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="/_astro/Layout.astro_astro_type_script_index_0_lang.CedYVabU.js"
+    ></script>
+  </body>
+</html>
